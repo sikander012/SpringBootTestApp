@@ -120,31 +120,9 @@ public class StudentController {
 	}
 
 	// 5.getAll
-	/*
-	 * @GetMapping("/all") public ResponseEntity<?> getAllStudent() {
-	 * 
-	 * ResponseEntity<?> resp = null;
-	 * 
-	 * try {
-	 * 
-	 * List<Student> list = service.getAllStudent();
-	 * 
-	 * if (!list.isEmpty() && list != null) { resp = new
-	 * ResponseEntity<List<Student>>(list, HttpStatus.OK); } else { resp = new
-	 * ResponseEntity<String>("No Data Found", HttpStatus.BAD_REQUEST); }
-	 * 
-	 * } catch (Exception e) {
-	 * 
-	 * resp = new ResponseEntity<String>("Unable to Fetch Data ",
-	 * HttpStatus.INTERNAL_SERVER_ERROR); e.printStackTrace(); }
-	 * 
-	 * return resp;
-	 * 
-	 * }
-	 */  
-	  
+	
 	  @GetMapping("/all") public ResponseEntity<?> getAllStudent() {
-		  
+	  
 	  ResponseEntity<?> resp = null;
 	  
 	  try {
@@ -159,10 +137,13 @@ public class StudentController {
 	  
 	  resp = new ResponseEntity<String>("Unable to Fetch Data ",
 	  HttpStatus.INTERNAL_SERVER_ERROR); e.printStackTrace(); }
-	  System.out.println("..............Hello Sikander.....................................");
+	  
 	  return resp;
 	  
 	  }
+	   
+	  
+	  
 	 
 	  
 	 
