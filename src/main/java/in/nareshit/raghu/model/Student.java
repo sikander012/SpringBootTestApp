@@ -1,5 +1,7 @@
 package in.nareshit.raghu.model;
 
+import java.sql.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,7 +34,6 @@ public class Student {
 	private Double stdGst;
 
 	public Student(Integer stdId, String stdName, String stdCourse, Double stdFee, Double stdDiscount, Double stdGst) {
-		super();
 		this.stdId = stdId;
 		this.stdName = stdName;
 		this.stdCourse = stdCourse;
@@ -88,5 +89,17 @@ public class Student {
 	public void setStdGst(Double stdGst) {
 		this.stdGst = stdGst;
 	}
+	
+	@Column(name="sDate")
+	private Date startDate;
+
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+	
 
 }
